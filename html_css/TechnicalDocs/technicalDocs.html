@@ -6,62 +6,102 @@
 	<title>Technical Documentation</title>
 
 	<link rel="stylesheet" type="text/css" href="technicalDocs.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
 	<main id="main-doc">
 		<section id="introduction" class="main-section">
 			<header id="introduction">Introduction</header>
-			<p>1</p>
-			<p>2</p>
-			<code>Code 1</code>
-			<ul>
-				<li>1</li>
-				<li>2</li>
-			</ul>
+			<div class="details">
+				<p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+				<p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example: </p>
+				
+				<code>
+					function greetMe(yourName) { alert("Hello " + yourName); }
+	            	greetMe("World");
+				</code>
+
+				<ul>
+					<li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+					<li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+				</ul>
+			</div>
+			
 		</section>
 		<section id="js_java" class="main-section">
 			<header id="js_java">Java Script & Java</header>
-			<p>3</p>
-			<p>4</p>
-			<code>code 2</code>
-			<ul>
-				<li>3</li>
-				<li>4</li>
-			</ul>
+			<div class="details">
+				<p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+				<p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods.</p>
+				
+				<code>
+					function greetMe(yourName) { alert("Hello " + yourName); }
+	            	greetMe("World");
+				</code>
+
+				<ul>
+					<li>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods.</li>
+					<li>You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</li>
+				</ul>
+			</div>
+			
 		</section>
 		<section id="hello_world" class="main-section">
 			<header id="hello_world">Hello World</header>
-			<p>5</p>
-			<p>6</p>
-			<code>code 3</code>
+			<div class="details">
+				<p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: </p>
+			<p>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</p>
+			
+			<code>
+				function greetMe(yourName) { alert("Hello " + yourName); }
+            	greetMe("World");
+			</code>
+			
 			<ul>
-				<li>5</li>
-				<li>6</li>
+				<li>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. </li>
+				<li>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9).</li>
 			</ul>
+			</div>
+			
 		</section>
 		<section id="variables" class="main-section">
 			<header id="variables">Variables</header>
-			<p>7</p>
-			<p>8</p>
-			<code>code 4</code>
-			<ul>
-				<li>7</li>
-				<li>8</li>
-			</ul>
+			<div class="details">
+				<p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). </p>
+				<p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </p>
+				<code>
+					function greetMe(yourName) { alert("Hello " + yourName); }
+	            	greetMe("World");
+				</code>
+				<ul>
+					<li>Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). </li>
+					<li>Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). </li>
+				</ul>
+			</div>
+			
 		</section>
 		<section id="constants" class="main-section">
 			<header id="constants">Constants</header>
-			<p>9</p>
-			<p>10</p>
-			<code>code 5</code>
-			<ul>
-				<li>9</li>
-				<li>10</li>
-			</ul>
+			
+			<div class="details">
+				<p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. </p>
+				<p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. </p>
+				<code>
+					function greetMe(yourName) { alert("Hello " + yourName); }
+	            	greetMe("World");
+				</code>
+				<ul>
+					<li>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value. </li>
+					<li>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value. </li>
+				</ul>
+			</div>
+			
 		</section>
 	</main>
-	
+
 	<nav id="navbar">
 		<header>Responsive Design</header>
 
