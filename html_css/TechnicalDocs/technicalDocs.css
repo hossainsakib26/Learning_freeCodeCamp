@@ -26,17 +26,22 @@ body {
 }
 
 
-p, code {
+p{
 	margin: 1rem 0;
-
 }
 
 li {
 	margin: 0.5rem 0;
 }
 
+.code {
+	background-color: #ffffff;
+	padding: 1rem 5rem;
+	text-align: left;
+	margin: 1rem 1rem;
+}
+
 code {
-	background-color: #fff;
 	white-space: pre-line;
 }
 
