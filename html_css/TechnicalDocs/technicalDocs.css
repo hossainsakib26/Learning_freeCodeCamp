@@ -86,4 +86,8 @@ a {
 		display: none;
 	}
 
+	#main-doc {
+		width: 100%;
+	}
+
 }
