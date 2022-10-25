@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-primary: #aaffaa;
+    --color-secondary: #00aaff;
+    --color-danger: #ff00aa;
+    --color-primary75: #aaffaa50;
+    --color-secondary75: #00aaff50;
+    --color-danger75: #ff00aa50;
+}
+
+html {
+    font-size: 0.625rem;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+h1, h2, h3 {
+    letter-spacing: 0.15rem;
+    word-spacing: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p, input, button, span {
+    font-size: 1.5rem;
+}
+
+i {
+    width: 10rem;
+    height: 10rem;
+    font-size: 6rem;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EE44aa;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo > #header-img {
+    width: 350px;
+    height: 50px;
+}
+
+#nav-bar {
+    width: 40vw;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem 0 0;
+}
+
+#nav-bar > .nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+#video {
+    background-color: antiquewhite;
+    height: 200px;
+}
+
+.btn {
+    width: 15rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 1.75rem;
+}
+
+.btn-info {
+    background-color: var(--color-secondary);
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.btn-info:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05)
+}
+
+.btn-secondary{    
+    background-color: var(--color-primary);
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.05)
+}
+
+.email-input {
+    min-width: 50rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.75rem;
+    border-radius: 0.25rem;
+}
+
+#main {
+    margin-top: 6rem;
+    padding: 01rem 1rem;
+    background-color: #1144aa50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
