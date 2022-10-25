@@ -11,6 +11,9 @@
     --color-primary75: #aaffaa50;
     --color-secondary75: #00aaff50;
     --color-danger75: #ff00aa50;
+
+    --parents-gap: 6rem;
+    --siblings-gap: 3rem;
 }
 
 html {
@@ -43,8 +46,6 @@ p, input, button, span {
 }
 
 i {
-    width: 10rem;
-    height: 10rem;
     font-size: 6rem;
 }
 
@@ -126,7 +127,7 @@ i {
 
 #main {
     margin-top: 6rem;
-    padding: 01rem 1rem;
+    padding: 1rem 20rem;
     background-color: #1144aa50;
     display: flex;
     flex-direction: column;
@@ -140,4 +141,38 @@ form {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--parents-gap);
+}
+
+/* features */
+#features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--siblings-gap);
+}
+
+.feature-body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--siblings-gap);
+}
+
+.feature-desc {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+#how_it_works {display: flex; justify-content: center; align-items: center;}
+
+#video {
+    height: 350px;
+    width: 620px;
 }
