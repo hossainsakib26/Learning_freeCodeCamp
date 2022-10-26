@@ -1,0 +1,19 @@
+:root {
+    --screen-sm: 640px;
+    --screen-md: 768px;
+    --screen-lg: 1024px;
+    --screen-xl: 1280px;
+
+    --background-color1: #FFFFFF;
+    --background-color2: #343A40;
+    
+    
+    --first-color: #E5F4E3;
+    --second-color: #5DA9E9;
+    --third-color: #F85C70;
+    --fourth-color: #003f91;
+    
+
+    --text-color1: #CCCCCC;
+    --text-color2: #ffffff;
+}
