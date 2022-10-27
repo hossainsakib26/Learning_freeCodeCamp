@@ -4,9 +4,21 @@
     --screen-lg: 1024px;
     --screen-xl: 1280px;
 
+    --heading-s: 1.5rem;
+    --heading-l: 2rem;
+    --heading-xl: 3rem;
+
+    --section-gap-Y: 5rem;
+    --section-gap-X: 3rem;
+
+    --children-gap-X: 3rem;
+    --children-gap-Y: 3rem;
+
     --background-color1: #FFFFFF;
     --background-color2: #343A40;
     
+    --mobile-padding-x: 1rem;
+    --mobile-padding-y: 2rem;
     
     --first-color: #E5F4E3;
     --second-color: #5DA9E9;
@@ -16,4 +28,19 @@
 
     --text-color1: #CCCCCC;
     --text-color2: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif', serif;
+    color: var(--text-color1);
+}
+
+html {
+    font-size: 0.625rem;
+}
+
+a {
+    text-decoration: none;
 }
