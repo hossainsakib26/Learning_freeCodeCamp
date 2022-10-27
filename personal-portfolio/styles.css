@@ -42,7 +42,9 @@ html {
 }
 
 body {
-    box-sizing: border-box;
+    box-sizing: content-box;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -91,7 +93,6 @@ nav > a {
 
 #main section {
     width: 100%;
-    
 }
 
 #welcome-section {
@@ -102,14 +103,244 @@ nav > a {
     gap: var(--children-gap-Y) 0;
 
     height: 100vh;
+    /* background-color: #343A40; */
     background: linear-gradient(180deg, var(--background-color2), var(--second-color));
+    /* background: repeating-linear-gradient(23deg, var(--background-color2), var(--second-color) 5%, var(--background-color2) 10%); */
 }
 
 #welcome-section h1 {
     font-size: 4rem;
     text-shadow: var(--text-color1) 1px 0 5px;
+    
 }
 #welcome-section p {
     font-size: 3rem;
     color: var(--fourth-color);
+}
+
+h2 {
+    font-size: 3.5rem;
+    border-bottom: 3px solid var(--fourth-color);
+}
+
+#about-section, #projects, #contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: var(--children-gap-Y) var(--children-gap-X);
+}
+
+
+
+#about-section .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-card {
+    width: 90%;
+    height: auto;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem 0;
+
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 2rem 2rem 2rem;
+
+}
+
+.info-card > .card-header {
+    width: 100%;
+    background-color: #CCCCCC;
+    /* border-radius: 1rem 1rem 0 0; */
+
+}
+
+.card-header > img {
+    /* border-radius: 1rem 1rem 0 0; */
+    width: 100%;
+    height: 350px;
+}
+
+.info-card > .card-body{
+    width: 100%;
+    background-color: white;
+}
+
+.card-body p {
+    color: #343A40;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.info-card > button {
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: var(--third-color);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.card-body > .table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem 1.5rem;
+}
+
+.table > .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2rem;
+    color: #343A40;
+}
+
+
+.row > .cell1, .cell2 {
+    width: 50%;
+    color: #343A40;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+.row > .cell1 {
+    text-align: right;
+    border-right: 5px solid var(--third-color);
+}
+.row > .cell2 {
+    text-align: left;
+}
+
+.project-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 0;
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: var(--first-color);
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.card > .card-header {
+    width: 100%;
+}
+
+.card-header > img {
+    width: 100%;
+    height: 450px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card > .card-body {
+    text-align: center;
+}
+
+.card > .card-body > .project-tile {
+    font-size: 3rem;
+    color: #343A40;
+}
+
+#contact-section {
+    text-align: center;
+    padding: 3rem 0;
+
+    background-color: var(--fourth-color);
+}
+
+#contact-section > .main-text {
+    font-size: 5rem;
+}
+
+#contact-section > .paragraph-text {
+    font-size: 3rem;
+}
+
+#contact-section > .social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 4rem;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    
+.logo {
+    font-size: 4rem;
+}
+
+#navbar  {
+    padding: 0 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#navbar  > a {
+    margin: var(--children-gap-X);
+}
+
+.nav-link {
+    flex-direction: row;
+    gap: 0 var(--children-gap-X);
+}
+
+#about-section .info {
+    width: 75%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-card {
+    width: 30%;
+}
+
+.project-list {
+    width: 75%;
+    flex-direction: row;
+    gap: 1rem 2rem;
+}
+
+.card {
+    width: 30%;
+    gap: 2rem 0;
+
+}
+
+
 }
